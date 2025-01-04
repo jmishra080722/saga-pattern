@@ -4,7 +4,6 @@ import com.jay.saga.commons.dto.OrderRequestDto;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
-import java.util.Random;
 import java.util.UUID;
 
 @NoArgsConstructor
