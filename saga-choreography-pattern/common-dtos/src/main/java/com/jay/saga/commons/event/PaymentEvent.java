@@ -1,12 +1,14 @@
 package com.jay.saga.commons.event;
 
 import com.jay.saga.commons.dto.PaymentRequestDto;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import java.util.UUID;
 
 @NoArgsConstructor
+@Data
 public class PaymentEvent implements Event{
 
     private UUID eventId = UUID.randomUUID();
