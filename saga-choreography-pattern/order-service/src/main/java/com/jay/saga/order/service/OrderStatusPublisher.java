@@ -14,6 +14,7 @@ public class OrderStatusPublisher {
     private Sinks.Many<OrderEvent> orderSinks;
 
     public void publishOrderEvent(OrderRequestDto orderRequestDto, OrderStatus orderStatus){
+        System.out.println("publishOrderEvent");
         OrderEvent orderEvent = new OrderEvent(orderRequestDto, orderStatus);
         orderSinks.tryEmitNext(orderEvent);
 

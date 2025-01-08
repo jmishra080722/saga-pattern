@@ -8,3 +8,7 @@ spring:
           destination: order-event
         paymentProcessor-out-0:
           destination: payment-event
+
+
+server:
+  port: 8082
